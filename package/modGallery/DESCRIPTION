@@ -11,8 +11,8 @@ License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3
-URL: https://docs.artalytics.dev/r/modGallery, https://github.com/artalytics/modGallery
-BugReports: https://github.com/artalytics/modGallery/issues
+URL: https://docs.artalytics.dev/r/modGallery, https://github.com/artalytics/modgallery
+BugReports: https://github.com/artalytics/modgallery/issues
 Config/testthat/edition: 3
 Imports:
   rdstools,
@@ -40,7 +40,7 @@ Remotes:
   artalytics/artcore,
   artalytics/artopensea,
   artalytics/artutils,
-  artalytics/artshiny,
+  artalytics/apptools,
   artalytics/artcurator,
   artalytics/artsend,
   posit-dev/shinychat/pkg-r
