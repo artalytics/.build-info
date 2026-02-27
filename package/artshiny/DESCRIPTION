@@ -12,8 +12,8 @@ License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-URL: https://github.com/artalytics/artshiny, https://docs.artalytics.dev/r/artshiny/
-BugReports: https://github.com/artalytics/artshiny/issues
+URL: https://github.com/artalytics/apptools, https://docs.artalytics.dev/r/artshiny/
+BugReports: https://github.com/artalytics/apptools/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
