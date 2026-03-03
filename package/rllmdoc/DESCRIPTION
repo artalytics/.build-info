@@ -1,0 +1,32 @@
+Package: rllmdoc
+Title: Generate llms.txt from Quarto Projects
+Version: 0.0.1
+Authors@R: 
+    person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
+Description: Frontmatter-driven generation and validation of llms.txt and llms-full.txt from Quarto and markdown documentation projects.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+URL: https://github.com/artalytics/rllmdoc
+BugReports: https://github.com/artalytics/rllmdoc/issues
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown, artalytics/templ.pkgdown
+Imports:
+  cli,
+  fs,
+  glue,
+  jsonlite,
+  jsonvalidate,
+  lifecycle,
+  rdstools,
+  rlang,
+  withr,
+  yaml
+Remotes: 
+	artalytics/arthelpers,
+	r-data-science/rdstools
+Suggests: 
+  testthat (>= 3.0.0),
+  arthelpers,
+  covr
