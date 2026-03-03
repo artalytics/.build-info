@@ -1,6 +1,6 @@
 Package: arthelpers
 Title: Artalytics Developer Tools
-Version: 0.0.4
+Version: 0.0.5
 Authors@R: 
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Internal developer tools and utilities for Artalytics R package development.
@@ -13,12 +13,9 @@ BugReports: https://github.com/artalytics/arthelpers/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
-    artcore (>= 0.7.1),
     shiny,
     DBI,
     pkgload,
-    webshot2,
-    chromote,
     callr,
     httpuv,
     httr2,
@@ -26,11 +23,13 @@ Imports:
     stringr,
     fs,
     utils,
-    testthat,
-    lubridate
+    testthat
 Remotes: 
     artalytics/artcore
 Suggests:
+    artcore (>= 0.7.1),
+    chromote,
+    webshot2,
     shinytest2,
     httptest2,
     withr,
