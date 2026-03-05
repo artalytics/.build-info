@@ -1,32 +1,34 @@
 Package: rllmdoc
-Title: Generate llms.txt from Quarto Projects
-Version: 0.0.1
-Authors@R: 
+Title: Unified llms.txt Generation for Quarto and R Package Projects
+Version: 0.1.0
+Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
-Description: Frontmatter-driven generation and validation of llms.txt and llms-full.txt from Quarto and markdown documentation projects.
+Description: Generates spec-compliant llms.txt and llms-full.txt files from
+    Quarto website projects and R package (pkgdown) projects. Provides a
+    unified interface that wraps native tooling, validates strictly against
+    the llms.txt specification, and fails fast on missing metadata.
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-URL: https://github.com/artalytics/rllmdoc
+URL: https://github.com/artalytics/rllmdoc,
+    https://docs.artalytics.dev/r/rllmdoc
 BugReports: https://github.com/artalytics/rllmdoc/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
-  cli,
-  fs,
-  glue,
-  jsonlite,
-  jsonvalidate,
-  lifecycle,
-  rdstools,
-  rlang,
-  withr,
-  yaml
-Remotes: 
-	artalytics/arthelpers,
-	r-data-science/rdstools
-Suggests: 
-  testthat (>= 3.0.0),
-  arthelpers,
-  covr
+    cli,
+    glue,
+    jsonlite,
+    jsonvalidate,
+    rlang,
+    rprojroot,
+    yaml
+VignetteBuilder: quarto
+Suggests:
+    covr,
+    knitr,
+    pkgdown (>= 2.2.0),
+    quarto,
+    testthat (>= 3.0.0),
+    withr
