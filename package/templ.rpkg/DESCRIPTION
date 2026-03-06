@@ -13,16 +13,7 @@ BugReports: https://github.com/artalytics/templ.rpkg/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports: 
-  cli,
-  glue,
-  lifecycle,
-  rdstools,
-  rlang,
-  withr
-Remotes: 
-	artalytics/arthelpers,
-	r-data-science/rdstools
+  lifecycle
 Suggests: 
   testthat (>= 3.0.0),
-  arthelpers,
   covr
