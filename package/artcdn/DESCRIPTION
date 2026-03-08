@@ -1,0 +1,33 @@
+Package: artcdn
+Title: CDN Storage Operations for DigitalOcean Spaces
+Version: 0.0.1
+Authors@R:
+    person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
+Description: Centralized CDN storage operations for DigitalOcean Spaces buckets.
+    Provides a registry-driven bucket configuration, cached S3 client, and generic
+    primitives for uploading, listing, checking, and deleting objects. Designed as the
+    single storage layer for both platform and agent infrastructure workloads.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+URL: https://docs.artalytics.dev/r/artcdn, https://github.com/artalytics/artcdn
+BugReports: https://github.com/artalytics/artcdn/issues
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown, artalytics/templ.pkgdown
+Imports:
+    fs,
+    httr2,
+    paws,
+    paws.storage,
+    rdstools,
+    stringr,
+    yaml
+Remotes:
+    r-data-science/rdstools
+Depends:
+    R (>= 4.1.0)
+Suggests:
+    testthat (>= 3.0.0),
+    covr,
+    withr
