@@ -1,6 +1,6 @@
 Package: artcdn
 Title: CDN Storage Operations for DigitalOcean Spaces
-Version: 0.0.1
+Version: 0.1.0
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Centralized CDN storage operations for DigitalOcean Spaces buckets.
@@ -16,6 +16,7 @@ BugReports: https://github.com/artalytics/artcdn/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
+    artcore,
     fs,
     httr2,
     paws,
@@ -24,10 +25,15 @@ Imports:
     stringr,
     yaml
 Remotes:
+    artalytics/artcore,
     r-data-science/rdstools
 Depends:
     R (>= 4.1.0)
 Suggests:
     testthat (>= 3.0.0),
     covr,
+    knitr,
+    quarto,
+    rmarkdown,
     withr
+VignetteBuilder: quarto
