@@ -8,6 +8,7 @@ Description: Generates spec-compliant llms.txt and llms-full.txt files from
     unified interface that wraps native tooling, validates strictly against
     the llms.txt specification, and fails fast on missing metadata.
 License: file LICENSE
+SystemRequirements: quarto
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
@@ -21,6 +22,7 @@ Imports:
     glue,
     jsonlite,
     jsonvalidate,
+    quarto,
     rlang,
     rprojroot,
     yaml
@@ -29,6 +31,5 @@ Suggests:
     covr,
     knitr,
     pkgdown (>= 2.2.0),
-    quarto,
     testthat (>= 3.0.0),
     withr
