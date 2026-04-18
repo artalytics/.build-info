@@ -1,6 +1,6 @@
 Package: artopenai
 Title: OpenAI Toolkit
-Version: 0.12.0
+Version: 0.12.1
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
