@@ -17,10 +17,12 @@ Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
     artcore,
+    cli,
     fs,
     httr2,
     paws,
     paws.storage,
+    R6,
     rdstools,
     stringr,
     yaml
