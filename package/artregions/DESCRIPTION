@@ -1,0 +1,31 @@
+Package: artregions
+Title: AI-Selected Zoom Regions for Digital Artwork
+Version: 0.1.0
+Authors@R:
+    person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
+Description: Identifies visually compelling regions of a digital artwork using
+    Google's Gemini multimodal models with API-enforced structured output.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.1.0)
+Imports:
+    artgemini,
+    base64enc,
+    checkmate,
+    data.table,
+    fs,
+    jsonlite,
+    magick,
+    stringr
+Suggests:
+    covr,
+    httptest2,
+    rstudioapi,
+    testthat (>= 3.0.0),
+    withr
+Remotes:
+    artalytics/artgemini
+Config/testthat/edition: 3
