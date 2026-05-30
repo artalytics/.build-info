@@ -29,3 +29,6 @@ Suggests:
 Remotes:
     artalytics/artgemini
 Config/testthat/edition: 3
+Config/Needs/website: pkgdown, artalytics/templ.pkgdown
+URL: https://github.com/artalytics/artregions
+BugReports: https://github.com/artalytics/artregions/issues
