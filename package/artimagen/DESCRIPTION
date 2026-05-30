@@ -1,0 +1,28 @@
+Package: artimagen
+Title: AI Image Generation and Editing Toolkit
+Version: 0.0.1
+Authors@R:
+    person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
+Description: Tools for AI-assisted image generation and editing for digital
+    artists, including region-aware editing and tiled super-resolution. Built
+    to sit on top of the Artalytics Gemini client (artgemini). Functions are
+    introduced under an experimental lifecycle and graduate to stable as they
+    settle.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+URL: https://github.com/artalytics/artimagen
+BugReports: https://github.com/artalytics/artimagen/issues
+Depends:
+    R (>= 4.1.0)
+Imports:
+    data.table,
+    fs,
+    lifecycle,
+    magick
+Suggests:
+    covr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown, artalytics/templ.pkgdown
