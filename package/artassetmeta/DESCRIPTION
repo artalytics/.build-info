@@ -1,0 +1,28 @@
+Package: artassetmeta
+Title: Tag Digital Art Assets with Metadata
+Version: 0.1.0
+Authors@R:
+    person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
+Description: A compact, XMP-first metadata tagging function for original digital
+    fine art and derivative media such as still images, GIFs, and short videos.
+    It writes identity, authorship, ownership, rights, accessibility, and
+    discovery fields by delegating to ExifTool.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+URL: https://github.com/artalytics/artassetmeta
+BugReports: https://github.com/artalytics/artassetmeta/issues
+Depends:
+    R (>= 4.1)
+Imports:
+    exiftoolr,
+    fs,
+    stringr
+Suggests:
+    covr,
+    magick,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown, artalytics/templ.pkgdown
+SystemRequirements: ExifTool
