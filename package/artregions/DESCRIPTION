@@ -1,6 +1,6 @@
 Package: artregions
 Title: AI-Selected Zoom Regions for Digital Artwork
-Version: 0.1.0
+Version: 0.2.0
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Identifies visually compelling regions of a digital artwork using
@@ -9,6 +9,8 @@ License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+URL: https://docs.artalytics.dev/r/artregions, https://github.com/artalytics/artregions
+BugReports: https://github.com/artalytics/artregions/issues
 Depends:
     R (>= 4.1.0)
 Imports:
@@ -23,6 +25,9 @@ Imports:
 Suggests:
     covr,
     httptest2,
+    knitr,
+    quarto,
+    rmarkdown,
     rstudioapi,
     testthat (>= 3.0.0),
     withr
@@ -30,5 +35,4 @@ Remotes:
     artalytics/artgemini
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
-URL: https://github.com/artalytics/artregions
-BugReports: https://github.com/artalytics/artregions/issues
+VignetteBuilder: quarto
