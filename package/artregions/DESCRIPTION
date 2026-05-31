@@ -8,7 +8,6 @@ Description: Identifies visually compelling regions of a digital artwork using
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 URL: https://docs.artalytics.dev/r/artregions, https://github.com/artalytics/artregions
 BugReports: https://github.com/artalytics/artregions/issues
 Depends:
@@ -36,3 +35,4 @@ Remotes:
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 VignetteBuilder: quarto
+Config/roxygen2/version: 8.0.0
