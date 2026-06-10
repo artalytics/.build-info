@@ -1,6 +1,6 @@
 Package: artopenai
 Title: OpenAI Toolkit
-Version: 0.12.1
+Version: 0.13.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -17,9 +17,11 @@ SystemRequirements: ImageMagick++ (libmagick++-dev)
 Config/testthat/edition: 3
 Imports:
     artcore (>= 1.4.0),
+    curl,
     ellmer (>= 0.4.0),
     httr2,
-    jsonlite
+    jsonlite,
+    tools
 Depends:
     R (>= 4.1.0)
 Suggests:
