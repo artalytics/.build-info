@@ -1,6 +1,6 @@
 Package: artbenchmark
 Title: Artwork Metrics Computation for Portfolio Benchmarking
-Version: 0.9.0
+Version: 0.9.1
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
