@@ -1,20 +1,19 @@
 Package: artcurator
 Title: Art Curation and Analysis Tools
-Version: 0.2.0
+Version: 0.2.1
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Tools for curating and analyzing art collections, including metadata management, image analysis, and collection insights.
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 URL: https://docs.artalytics.dev/r/artcurator, https://github.com/artalytics/artcurator
 BugReports: https://github.com/artalytics/artcurator/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
     artcore (>= 1.4.0),
-    artgemini (>= 0.3.0),
+    artgemini (>= 0.6.0),
     artopenai (>= 0.11.0),
     artutils (>= 0.19.0),
     data.table,
@@ -47,3 +46,4 @@ Remotes:
 VignetteBuilder: quarto
 Depends:
     R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
