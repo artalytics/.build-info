@@ -1,6 +1,6 @@
 Package: artutils
 Title: Artalytics Toolkit
-Version: 0.19.3
+Version: 0.20.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -10,7 +10,6 @@ Description: Package containing tools and data shared across the modules of the 
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.3
 URL: https://docs.artalytics.dev/r/artutils, https://github.com/artalytics/artutils
 BugReports: https://github.com/artalytics/artutils/issues
 SystemRequirements: 
@@ -46,3 +45,4 @@ Suggests:
   uuid,
   qpdf
 VignetteBuilder: quarto
+Config/roxygen2/version: 8.0.0
