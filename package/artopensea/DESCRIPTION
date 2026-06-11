@@ -1,6 +1,6 @@
 Package: artopensea
 Title: OpenSea API Client
-Version: 0.8.0
+Version: 0.8.1
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -10,7 +10,6 @@ Description: R client for the OpenSea API v2. Retrieve NFT data, account
     information, and collections from the OpenSea marketplace.
 License: file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.3.3
 URL: https://github.com/artalytics/artopensea
 BugReports: https://github.com/artalytics/artopensea/issues
 SystemRequirements: 
@@ -37,3 +36,4 @@ Suggests:
   withr
 VignetteBuilder: quarto
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
+Config/roxygen2/version: 8.0.0
