@@ -28,7 +28,7 @@ Imports:
 Remotes:
     artalytics/artcore,
     artalytics/artutils,
-    artalytics/apptools,
+    artalytics/artshiny,
     artalytics/arthelpers,
     JohnCoene/waiter
 Suggests:
