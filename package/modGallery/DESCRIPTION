@@ -40,7 +40,7 @@ Remotes:
   artalytics/artcore,
   artalytics/artopensea,
   artalytics/artutils,
-  artalytics/apptools,
+  artalytics/artshiny,
   artalytics/artcurator,
   artalytics/artsend,
   posit-dev/shinychat/pkg-r
