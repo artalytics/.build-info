@@ -1,6 +1,6 @@
 Package: artshiny
 Title: Shared Shiny UI Components
-Version: 0.3.1
+Version: 0.3.4
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Provides reusable Shiny UI components and helpers for the Artalytics
@@ -11,7 +11,6 @@ Description: Provides reusable Shiny UI components and helpers for the Artalytic
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 URL: https://github.com/artalytics/artshiny, https://docs.artalytics.dev/r/artshiny/
 BugReports: https://github.com/artalytics/artshiny/issues
 Config/testthat/edition: 3
@@ -19,6 +18,7 @@ Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
     artcore (>= 0.9.0),
     artutils (>= 0.19.0),
+    fs,
     shiny,
     rdstools,
     stringr,
@@ -39,3 +39,4 @@ Suggests:
 Depends:
     R (>= 4.1.0)
 VignetteBuilder: quarto
+Config/roxygen2/version: 8.0.0
