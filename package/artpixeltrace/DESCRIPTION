@@ -1,6 +1,6 @@
 Package: artpixeltrace
 Title: PixelTrace
-Version: 0.8.7
+Version: 0.9.0
 Authors@R: 
   person(
     given = "Bobby", 
@@ -11,11 +11,13 @@ Authors@R:
 Description: PixelTrace Verification.
 License: file LICENSE
 Encoding: UTF-8
-LazyData: true
 URL: https://github.com/artalytics/artpixeltrace,
     https://docs.artalytics.dev/r/artpixeltrace
 BugReports: https://github.com/artalytics/artpixeltrace/issues
 SystemRequirements: 
+    typst (certificate typesetting; no apt package exists so pak cannot
+    resolve it - install the standalone binary or Quarto; resolved at
+    runtime via TYPST_BIN, PATH, or Quarto's vendored copy),
     ImageMagick++ (libmagick++-dev),  
     Armadillo (libarmadillo-dev),  
     BLAS/LAPACK (libblas-dev, liblapack-dev),  
@@ -27,22 +29,24 @@ SystemRequirements:
     Fortran compiler (gfortran)
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
+Roxygen: list(markdown = TRUE)
 Imports:
     artutils (>= 0.12),
     artcore,
+    checkmate,
     data.table,
     fs,
+    grDevices,
     httr2,
+    jsonlite,
     lubridate,
     magick,
+    qrcode,
     OpenImageR,
     rdstools,
     scales,
-    shiny,
     stringr,
-    tinytex,
-    zip,
-    utils
+    zip
 Remotes:
   artalytics/artutils,
   artalytics/artcore,
@@ -54,8 +58,6 @@ Suggests:
   knitr,
   rmarkdown,
   quarto,
-  shiny.react,
-  tinytex,
   pdftools
 VignetteBuilder: quarto
 Config/roxygen2/version: 8.0.0
