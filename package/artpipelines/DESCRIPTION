@@ -1,6 +1,6 @@
 Package: artpipelines
 Title: Art Pipelines
-Version: 0.14.0
+Version: 0.17.0
 Authors@R: 
     person(given = "Bobby",
            family = "Fatemi",
@@ -22,9 +22,9 @@ Imports:
   artbenchmark (>= 0.9.0),
   artcdn (>= 0.2.0),
   artcore (>= 1.4.0),
-  artcurator (>= 0.2.1),
+  artcurator (>= 0.3.0),
   artprocreate (>= 0.3.0),
-  artutils (>= 0.22.0),
+  artutils (>= 0.23.0),
   artpixeltrace (>= 0.11.0),
   artopensea (>= 0.8.0),
   rdstools,
@@ -36,7 +36,6 @@ Imports:
   fs,
   gifski,
   ggplot2,
-  ggtext,
   jsonlite,
   lubridate,
   magick,
