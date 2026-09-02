@@ -24,8 +24,8 @@ Imports:
   artcore (>= 1.4.0),
   artcurator (>= 0.2.1),
   artprocreate (>= 0.3.0),
-  artutils (>= 0.20.0),
-  artpixeltrace (>= 0.8.6),
+  artutils (>= 0.22.0),
+  artpixeltrace (>= 0.11.0),
   artopensea (>= 0.8.0),
   rdstools,
   av,
@@ -55,8 +55,7 @@ Remotes:
   artalytics/artpixeltrace,
   artalytics/artprocreate,
   artalytics/artutils,
-  r-data-science/rdstools,
-  r-data-science/rpgconn
+  r-data-science/rdstools
 Depends: 
   R (>= 4.1.0)
 Suggests:
@@ -69,7 +68,6 @@ Suggests:
   qpdf,
   quarto,
   rmarkdown,
-  rpgconn,
   rvest,
   testthat (>= 3.0.0),
   uuid,
