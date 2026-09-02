@@ -1,6 +1,6 @@
 Package: artcurator
 Title: Art Curation and Analysis Tools
-Version: 0.2.1
+Version: 0.3.0
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Tools for curating and analyzing art collections, including metadata management, image analysis, and collection insights.
@@ -15,14 +15,12 @@ Imports:
     artcore (>= 1.4.0),
     artgemini (>= 0.6.0),
     artopenai (>= 0.11.0),
-    artutils (>= 0.19.0),
     data.table,
     DBI,
     ellmer (>= 0.4.0),
     fs,
     glue,
     jsonlite,
-    jsonvalidate,
     lifecycle,
     stringr
 Suggests:
@@ -39,7 +37,6 @@ Suggests:
     withr
 Remotes:
     artalytics/artcore,
-    artalytics/artutils,
     artalytics/artgemini,
     artalytics/artopenai,
     artalytics/arthelpers
