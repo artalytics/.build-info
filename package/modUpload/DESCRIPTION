@@ -1,6 +1,6 @@
 Package: modUpload
 Title: Art Upload Module
-Version: 1.3.0
+Version: 1.3.1
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -16,7 +16,7 @@ BugReports: https://github.com/artalytics/modupload/issues
 Config/testthat/edition: 3
 Imports:
     artcore,
-    artutils,
+    artutils (>= 0.25.0),
     artopensea,
     artshiny (>= 0.3.0),
     artprocreate,
