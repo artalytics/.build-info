@@ -1,6 +1,6 @@
 Package: modUpload
 Title: Art Upload Module
-Version: 1.2.0
+Version: 1.3.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -19,7 +19,7 @@ Imports:
     artutils,
     artopensea,
     artshiny (>= 0.3.0),
-    artpixeltrace,
+    artprocreate,
     artpipelines (>= 0.14.0),
     rdstools,
     shiny,
@@ -30,6 +30,8 @@ Imports:
     bslib (>= 0.9.0),
     waiter,
     data.table,
+    fs,
+    tools,
     jsonlite,
     stringr,
     future,
@@ -40,7 +42,7 @@ Remotes:
   artalytics/artutils,
   artalytics/artopensea,
   artalytics/artshiny,
-  artalytics/artpixeltrace,
+  artalytics/artprocreate,
   artalytics/artpipelines,
   artalytics/arthelpers,
   r-data-science/rdstools
@@ -52,7 +54,9 @@ Suggests:
   knitr,
   quarto,
   rmarkdown,
-  testthat (>= 3.0.0)
+  testthat (>= 3.0.0),
+  withr,
+  htmltools
 VignetteBuilder: quarto
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Config/roxygen2/version: 8.0.0
