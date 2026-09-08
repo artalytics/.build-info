@@ -1,6 +1,6 @@
 Package: artcurator
 Title: Art Curation and Analysis Tools
-Version: 0.3.0
+Version: 0.4.0
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Tools for curating and analyzing art collections, including metadata management, image analysis, and collection insights.
