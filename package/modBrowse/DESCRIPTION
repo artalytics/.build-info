@@ -1,6 +1,6 @@
 Package: modBrowse
 Title: Browse Artworks
-Version: 0.9.3
+Version: 0.9.4
 Authors@R:
   person(given = "Bobby",
          family = "Fatemi",
@@ -10,13 +10,11 @@ Description: Shiny Module for Artalytics Platform App.
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.3
 URL: https://docs.artalytics.dev/r/modBrowse, https://github.com/artalytics/modbrowse
 BugReports: https://github.com/artalytics/modbrowse/issues
 Config/testthat/edition: 3
 Imports:
-  artcore,
-  artutils,
+  artutils (>= 0.24.1),
   artshiny,
   shinyNextUI,
   bslib (>= 0.9.0),
@@ -29,7 +27,6 @@ Imports:
   shinyjs,
   waiter
 Remotes:
-  artalytics/artcore,
   artalytics/artutils,
   artalytics/artshiny
 Depends:
@@ -42,3 +39,4 @@ Suggests:
   testthat (>= 3.0.0)
 VignetteBuilder: quarto
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
+Config/roxygen2/version: 8.0.0
