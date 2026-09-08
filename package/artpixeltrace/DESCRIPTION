@@ -1,6 +1,6 @@
 Package: artpixeltrace
 Title: PixelTrace Certificate Engine and Artwork Verification
-Version: 0.11.0
+Version: 0.12.0
 Authors@R: 
   person(
     given = "Bobby", 
@@ -34,7 +34,7 @@ Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Roxygen: list(markdown = TRUE)
 Imports:
-    artutils (>= 0.12),
+    artutils (>= 0.25.0),
     artcore,
     checkmate,
     data.table,
