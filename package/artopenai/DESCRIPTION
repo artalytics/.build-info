@@ -1,6 +1,6 @@
 Package: artopenai
 Title: OpenAI Toolkit
-Version: 0.14.0
+Version: 0.16.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -15,14 +15,14 @@ BugReports: https://github.com/artalytics/artopenai/issues
 SystemRequirements: ImageMagick++ (libmagick++-dev)
 Config/testthat/edition: 3
 Imports:
-    artcore (>= 1.4.0),
     curl,
     ellmer (>= 0.4.0),
     httr2,
     jsonlite,
+    stats,
     tools
 Depends:
-    R (>= 4.1.0)
+    R (>= 4.6.1)
 Suggests:
     covr,
     withr,
@@ -32,8 +32,6 @@ Suggests:
     rmarkdown,
     devtools,
     httptest2
-Remotes:
-    artalytics/artcore
 VignetteBuilder: quarto
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
