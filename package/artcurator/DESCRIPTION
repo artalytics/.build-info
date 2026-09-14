@@ -1,6 +1,6 @@
 Package: artcurator
 Title: Art Curation and Analysis Tools
-Version: 0.4.0
+Version: 0.9.0
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Tools for curating and analyzing art collections, including metadata management, image analysis, and collection insights.
@@ -14,18 +14,25 @@ Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
     artcore (>= 1.4.0),
     artgemini (>= 0.6.0),
-    artopenai (>= 0.11.0),
+    artopenai (>= 0.16.0),
+    base64enc,
+    brio,
+    digest,
     data.table,
     DBI,
     ellmer (>= 0.4.0),
     fs,
     glue,
+    httr2,
     jsonlite,
+    jsonvalidate,
     lifecycle,
-    stringr
+    magick,
+    rdstools,
+    stringr,
+    uuid
 Suggests:
     arthelpers,
-    base64enc,
     covr,
     devtools,
     httptest2,
@@ -39,8 +46,9 @@ Remotes:
     artalytics/artcore,
     artalytics/artgemini,
     artalytics/artopenai,
-    artalytics/arthelpers
+    artalytics/arthelpers,
+    r-data-science/rdstools
 VignetteBuilder: quarto
 Depends:
-    R (>= 4.1.0)
-Config/roxygen2/version: 8.0.0
+    R (>= 4.6.1)
+Config/roxygen2/version: 8.1.0
