@@ -1,6 +1,6 @@
 Package: modGallery
 Title: Art Gallery Shiny Module
-Version: 0.9.3
+Version: 0.10.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -44,14 +44,14 @@ Remotes:
   artalytics/artsend,
   posit-dev/shinychat/pkg-r
 Depends:
-  R (>= 4.1.0)
+  R (>= 4.6.1)
 Suggests:
   fs,
   covr,
   knitr,
   quarto,
   rmarkdown,
-  testthat (>= 3.0.0)
+  testthat (>= 3.2.0)
 VignetteBuilder: quarto
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
