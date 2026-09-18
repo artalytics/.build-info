@@ -48,14 +48,14 @@ Imports:
   uuid
 Remotes:
   artalytics/artbenchmark,
-  artalytics/artcdn@6bfd180b367874fa123ec59fe4ec0ed91dadca43,
+  artalytics/artcdn@d38b082e5c79140a0aaa15c93f28aae531eb78d1,
   artalytics/artcore,
   artalytics/artcurator,
   artalytics/arthelpers,
   artalytics/artopensea,
-  artalytics/artpixeltrace@6e7a35b36aadca20e97805506cb0c7e811e865a3,
-  artalytics/artprocreate@26491738299548c152b57d001d3e898c4e3680ea,
-  artalytics/artutils@7ae1a49ff44333220cc9a0b71b007e6b4854cdcd,
+  artalytics/artpixeltrace@4d29e44559d3766365545ef5f84590ec145b8dd6,
+  artalytics/artprocreate@3583ef0fa5c516a34f60228d9642a3e20920ab06,
+  artalytics/artutils@99081eeb1ef200412400fb3ce4b67b694b436e85,
   r-data-science/rdstools
 Depends: 
   R (>= 4.1.0)
