@@ -27,7 +27,7 @@ Imports:
 Remotes:
     r-data-science/rdstools,
     artalytics/artcore,
-    artalytics/artutils
+    artalytics/artutils@7ae1a49ff44333220cc9a0b71b007e6b4854cdcd
 Suggests:
     testthat (>= 3.0.0),
     covr,
