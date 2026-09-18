@@ -52,7 +52,7 @@ Imports:
     stringr,
     zip
 Remotes:
-  artalytics/artutils,
+  artalytics/artutils@7ae1a49ff44333220cc9a0b71b007e6b4854cdcd,
   artalytics/artcore,
   r-data-science/rdstools
 Depends:
