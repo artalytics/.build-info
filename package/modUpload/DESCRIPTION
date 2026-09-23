@@ -1,6 +1,6 @@
 Package: modUpload
 Title: Art Upload Module
-Version: 1.3.1
+Version: 1.6.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -16,11 +16,11 @@ BugReports: https://github.com/artalytics/modupload/issues
 Config/testthat/edition: 3
 Imports:
     artcore,
-    artutils (>= 0.25.0),
+    artutils (>= 0.28.0),
     artopensea,
     artshiny (>= 0.3.0),
-    artprocreate,
-    artpipelines (>= 0.14.0),
+    artprocreate (>= 0.4.1),
+    artpipelines (>= 0.22.0),
     rdstools,
     shiny,
     shinyalert,
@@ -30,24 +30,24 @@ Imports:
     bslib (>= 0.9.0),
     waiter,
     data.table,
-    fs,
-    tools,
-    jsonlite,
     stringr,
-    future,
+    callr,
+    later,
+    fs,
+    uuid,
     promises,
     DBI
 Remotes:
   artalytics/artcore,
-  artalytics/artutils,
+  artalytics/artutils@f83e95959a83aa7843ac3d6e2d42ea1556bfdb19,
   artalytics/artopensea,
-  artalytics/artshiny,
-  artalytics/artprocreate,
-  artalytics/artpipelines,
+  artalytics/artshiny@6f7451fc297d3a8390ffacef0145a0544465b5ff,
+  artalytics/artprocreate@3583ef0fa5c516a34f60228d9642a3e20920ab06,
+  artalytics/artpipelines@cba9b4960ee86ae2b9f6ef597e5244b833438a26,
   artalytics/arthelpers,
   r-data-science/rdstools
 Depends:
-  R (>= 4.1.0)
+  R (>= 4.6.1)
 Suggests:
   arthelpers,
   covr,
@@ -55,8 +55,9 @@ Suggests:
   quarto,
   rmarkdown,
   testthat (>= 3.0.0),
+  shinytest2,
   withr,
   htmltools
 VignetteBuilder: quarto
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
