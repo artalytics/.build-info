@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
   "label": "lint",
-  "message": "cancelled",
-  "color": "yellow"
+  "message": "passing",
+  "color": "brightgreen"
 }
