@@ -1,6 +1,6 @@
 Package: artcdn
 Title: CDN Storage Operations for DigitalOcean Spaces
-Version: 0.2.0
+Version: 0.3.1
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Centralized CDN storage operations for DigitalOcean Spaces buckets.
@@ -16,13 +16,16 @@ Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
     artcore,
+    checkmate,
     cli,
+    digest,
     fs,
     httr2,
     paws,
     paws.storage,
     R6,
     rdstools,
+    rlang,
     stringr,
     yaml
 Remotes:
@@ -38,4 +41,4 @@ Suggests:
     rmarkdown,
     withr
 VignetteBuilder: quarto
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
