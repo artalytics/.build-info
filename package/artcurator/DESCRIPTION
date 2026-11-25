@@ -1,6 +1,6 @@
 Package: artcurator
 Title: Art Curation and Analysis Tools
-Version: 0.10.1
+Version: 0.13.0
 Authors@R:
     person("Bobby", "Fatemi", , "bobby@artalytics.app", role = c("aut", "cre"))
 Description: Tools for curating and analyzing art collections, including metadata management, image analysis, and collection insights.
@@ -12,14 +12,14 @@ BugReports: https://github.com/artalytics/artcurator/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
-    artcore (>= 1.4.0),
-    artgemini (>= 0.6.0),
+    artcore (>= 1.5.4),
+    artgemini (>= 0.6.0.9000),
     artopenai (>= 0.16.0),
     base64enc,
     brio,
     digest,
     data.table,
-    DBI,
+    artutils (>= 0.35.1),
     ellmer (>= 0.4.0),
     fs,
     glue,
@@ -32,7 +32,6 @@ Imports:
     stringr,
     uuid
 Suggests:
-    arthelpers,
     covr,
     devtools,
     httptest2,
@@ -43,10 +42,10 @@ Suggests:
     tinytex,
     withr
 Remotes:
-    artalytics/artcore,
-    artalytics/artgemini,
-    artalytics/artopenai,
-    artalytics/arthelpers,
+    artalytics/artcore@c3d983ee523931f171ff3d89efbdd1147fd7d2bd,
+    artalytics/artgemini@11bb9793eb1b22e4d01c615e4b75efbb60fae669,
+    artalytics/artopenai@ef7fc666cc3141c33c2588456ab70674b935f2d8,
+    artalytics/artutils@7576e758cc20888b76af0b9c10eb44d6838b7a72,
     r-data-science/rdstools
 VignetteBuilder: quarto
 Depends:
