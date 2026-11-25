@@ -1,6 +1,6 @@
 Package: artcore
 Title: Platform Core Tools
-Version: 1.5.1
+Version: 2.0.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
@@ -15,14 +15,14 @@ BugReports: https://github.com/artalytics/artcore/issues
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Config/testthat/edition: 3
 Imports:
+    checkmate,
     DBI,
     RPostgres,
     base64enc,
     fs,
     httr2,
+    jsonlite,
     magick,
-    paws,
-    paws.storage,
     rdstools,
     scales,
     stringr,
@@ -30,13 +30,14 @@ Imports:
 Remotes:
     r-data-science/rdstools
 Depends:
-  R (>= 4.1.0)
+    R (>= 4.6.0)
 Suggests:
     covr,
+    curl,
     knitr,
     quarto,
     rmarkdown,
     testthat (>= 3.0.0),
     withr
 VignetteBuilder: quarto
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
