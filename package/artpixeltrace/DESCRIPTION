@@ -1,6 +1,6 @@
 Package: artpixeltrace
-Title: PixelTrace Certificate Engine and Artwork Verification
-Version: 0.12.0
+Title: Pixel Trace Authentication and Certificate Engine
+Version: 0.18.0
 Authors@R: 
   person(
     given = "Bobby", 
@@ -8,19 +8,20 @@ Authors@R:
     role = c("aut", "cre"), 
     email = "bobby@artalytics.app"
   )
-Description: Renders Certificates of Authenticity with the Typst engine
-  (cert_data() gathers, render_coa() typesets) and verifies artwork via
-  perceptual hashing and Procreate signature detection for the Artalytics
-  platform.
+Description: Measures normalized native-canvas, replay, and current-layer
+  evidence with a versioned Pixel Trace evaluator, computes perceptual image
+  fingerprints, and renders Certificates of Authenticity with the Typst engine
+  (prep_coa_data() prepares supplied facts and render_coa() typesets) for
+  the Artalytics platform.
 License: file LICENSE
 Encoding: UTF-8
 URL: https://github.com/artalytics/artpixeltrace,
     https://docs.artalytics.dev/r/artpixeltrace
 BugReports: https://github.com/artalytics/artpixeltrace/issues
 SystemRequirements: 
-    typst (certificate typesetting; no apt package exists so pak cannot
-    resolve it - install the standalone binary or Quarto; resolved at
-    runtime via TYPST_BIN, PATH, or Quarto's vendored copy),
+    Typst for certificate typesetting, supplied by a standalone executable
+    (TYPST_BIN or PATH) or the Quarto CLI (quarto typst compile;
+    QUARTO_PATH or PATH),
     ImageMagick++ (libmagick++-dev),  
     Armadillo (libarmadillo-dev),  
     BLAS/LAPACK (libblas-dev, liblapack-dev),  
@@ -34,32 +35,33 @@ Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Roxygen: list(markdown = TRUE)
 Imports:
-    artutils (>= 0.25.0),
-    artcore,
+    artcore (>= 1.5.4),
     checkmate,
     data.table,
+    digest,
     fs,
     grDevices,
-    httr2,
     jsonlite,
+    jsonvalidate,
     lubridate,
     magick,
     qrcode,
+    quarto,
     OpenImageR,
     pdftools,
     rdstools,
+    rlang,
     scales,
-    stringr,
-    zip
+    stringr
 Remotes:
-  artalytics/artutils@99081eeb1ef200412400fb3ce4b67b694b436e85,
-  artalytics/artcore,
+  artalytics/artcore@c3d983ee523931f171ff3d89efbdd1147fd7d2bd,
   r-data-science/rdstools
 Depends:
-  R (>= 4.1.0)
+    R (>= 4.6.0)
 Suggests:
+  bit64,
   testthat (>= 3.0.0),
   knitr,
-  quarto
+  withr
 VignetteBuilder: quarto
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
