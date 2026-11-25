@@ -1,27 +1,36 @@
 Package: artbenchmark
-Title: Artwork Metrics Computation for Portfolio Benchmarking
-Version: 0.9.1
+Title: Native Artwork Measurements and Fixed Reference Profiles
+Version: 0.11.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
            role = c("aut", "cre"),
            email = "bfatemi07@gmail.com")
-Description: Computes image-derived metrics for artwork analysis within the
-    Artalytics benchmark framework. Extracts color, coverage, and complexity
-    metrics from artwork images to support portfolio-relative benchmarking
-    across Time & Effort, Skill & Artistry, and Complexity & Detail categories.
+Description: Computes fifteen artwork descriptors from native source facts,
+    color-managed images and retained recording samples. Scores complete
+    measurements against a fixed, versioned reference using shared descriptive
+    profiles for Time and Activity, Palette and Process, and Structure and Change.
+    Computation is independent of database access and artist portfolio size.
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.3
 URL: https://github.com/artalytics/artbenchmark
 BugReports: https://github.com/artalytics/artbenchmark/issues
-SystemRequirements: ImageMagick++ (libmagick++-dev)
+SystemRequirements:
+  ImageMagick++ (libmagick++-dev),
+  ImageMagick magick command-line tool, Q8 non-HDRI with Little CMS and PNG support,
+  FFmpeg and ffprobe command-line tools with MOV/MP4 and zscale support
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
   data.table,
+  digest,
+  fs,
+  grDevices,
+  jsonlite,
   magick,
+  png,
+  processx,
   stats,
   stringr
 Depends:
@@ -33,3 +42,4 @@ Suggests:
   rmarkdown,
   testthat (>= 3.0.0)
 VignetteBuilder: quarto
+Config/roxygen2/version: 8.1.0
