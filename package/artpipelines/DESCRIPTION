@@ -1,6 +1,6 @@
 Package: artpipelines
 Title: Art Pipelines
-Version: 0.20.0
+Version: 0.25.2
 Authors@R: 
     person(given = "Bobby",
            family = "Fatemi",
@@ -12,35 +12,35 @@ Encoding: UTF-8
 URL: https://docs.artalytics.dev/r/artpipelines, https://github.com/artalytics/artpipelines
 BugReports: https://github.com/artalytics/artpipelines/issues
 SystemRequirements:
-  ImageMagick++ (libmagick++-dev),
+  ImageMagick++ with Little CMS color-management support (libmagick++-dev, liblcms2-dev),
   FFmpeg/libavfilter (libavfilter-dev),
   Archive (libarchive-dev),
   ExifTool (libimage-exiftool-perl),
   Poppler PDF (libpoppler-cpp-dev, poppler-data)
 Config/testthat/edition: 3
 Imports:
-  artbenchmark (>= 0.9.0),
+  artbenchmark (>= 0.11.0),
   artcdn (>= 0.3.0),
-  artcore (>= 1.4.0),
-  artcurator (>= 0.11.0),
-  artprocreate (>= 0.3.0),
-  artutils (>= 0.26.1),
-  artpixeltrace (>= 0.11.0),
-  artopensea (>= 0.8.0),
+  artcore (>= 1.5.5),
+  artcurator (>= 0.13.0),
+  artprocreate (>= 0.5.2),
+  artutils (>= 0.35.1),
+  artpixeltrace (>= 0.18.0),
   rdstools,
   av,
   checkmate (>= 2.1.0),
   data.table,
   digest,
-  DBI,
   exiftoolr,
+  filelock,
   fs,
   gifski,
   ggplot2,
   jsonlite,
   lubridate,
   magick,
-  shiny,
+  processx,
+  ps,
   stats,
   stringr,
   archive,
@@ -48,20 +48,20 @@ Imports:
   uuid
 Remotes:
   artalytics/artbenchmark,
-  artalytics/artcdn@d38b082e5c79140a0aaa15c93f28aae531eb78d1,
+  artalytics/artcdn,
   artalytics/artcore,
   artalytics/artcurator,
   artalytics/arthelpers,
-  artalytics/artopensea,
-  artalytics/artpixeltrace@4d29e44559d3766365545ef5f84590ec145b8dd6,
-  artalytics/artprocreate@3583ef0fa5c516a34f60228d9642a3e20920ab06,
-  artalytics/artutils@99081eeb1ef200412400fb3ce4b67b694b436e85,
+  artalytics/artpixeltrace,
+  artalytics/artprocreate,
+  artalytics/artutils,
   r-data-science/rdstools
 Depends: 
-  R (>= 4.1.0)
+  R (>= 4.6.1)
 Suggests:
   arthelpers,
   covr,
+  DBI,
   knitr,
   lifecycle,
   pak,
@@ -72,7 +72,8 @@ Suggests:
   rvest,
   testthat (>= 3.0.0),
   withr,
-  xml2
+  xml2,
+  zip
 VignetteBuilder: quarto
 LazyData: true
 Config/roxygen2/version: 8.1.0
