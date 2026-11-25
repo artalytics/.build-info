@@ -1,6 +1,6 @@
 Package: artpipelines
 Title: Art Pipelines
-Version: 0.25.2
+Version: 0.26.0
 Authors@R: 
     person(given = "Bobby",
            family = "Fatemi",
@@ -19,12 +19,12 @@ SystemRequirements:
   Poppler PDF (libpoppler-cpp-dev, poppler-data)
 Config/testthat/edition: 3
 Imports:
-  artbenchmark (>= 0.11.0),
+  artbenchmark (>= 0.12.0),
   artcdn (>= 0.3.0),
   artcore (>= 1.5.5),
   artcurator (>= 0.13.0),
   artprocreate (>= 0.5.2),
-  artutils (>= 0.35.1),
+  artutils (>= 0.36.0),
   artpixeltrace (>= 0.18.0),
   rdstools,
   av,
@@ -75,5 +75,4 @@ Suggests:
   xml2,
   zip
 VignetteBuilder: quarto
-LazyData: true
 Config/roxygen2/version: 8.1.0
