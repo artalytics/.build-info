@@ -1,15 +1,14 @@
 Package: artbenchmark
-Title: Native Artwork Measurements and Fixed Reference Profiles
-Version: 0.11.0
+Title: Native Artwork Canvas Facts, Measurements and Metrics
+Version: 0.12.0
 Authors@R:
     person(given = "Bobby",
            family = "Fatemi",
            role = c("aut", "cre"),
            email = "bfatemi07@gmail.com")
 Description: Computes fifteen artwork descriptors from native source facts,
-    color-managed images and retained recording samples. Scores complete
-    measurements against a fixed, versioned reference using shared descriptive
-    profiles for Time and Activity, Palette and Process, and Structure and Change.
+    color-managed images and retained recording samples, and returns them as
+    canvas facts, measurements, recording samples and metrics.
     Computation is independent of database access and artist portfolio size.
 License: file LICENSE
 Encoding: UTF-8
@@ -23,6 +22,7 @@ SystemRequirements:
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
+  checkmate,
   data.table,
   digest,
   fs,
