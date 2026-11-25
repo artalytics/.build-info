@@ -1,6 +1,6 @@
 Package: artpipelines
 Title: Art Pipelines
-Version: 0.26.0
+Version: 0.27.0
 Authors@R: 
     person(given = "Bobby",
            family = "Fatemi",
@@ -24,7 +24,7 @@ Imports:
   artcore (>= 1.5.5),
   artcurator (>= 0.13.0),
   artprocreate (>= 0.5.2),
-  artutils (>= 0.36.0),
+  artutils (>= 0.36.2),
   artpixeltrace (>= 0.18.0),
   rdstools,
   av,
@@ -43,6 +43,7 @@ Imports:
   ps,
   stats,
   stringr,
+  tools,
   archive,
   utils,
   uuid
