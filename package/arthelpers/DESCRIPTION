@@ -13,7 +13,6 @@ Config/testthat/edition: 3
 Config/Needs/website: pkgdown, artalytics/templ.pkgdown
 Imports:
     shiny,
-    DBI,
     pkgload,
     callr,
     httpuv,
@@ -23,10 +22,7 @@ Imports:
     fs,
     utils,
     testthat
-Remotes: 
-    artalytics/artcore
 Suggests:
-    artcore (>= 0.7.1),
     chromote,
     webshot2,
     shinytest2,
