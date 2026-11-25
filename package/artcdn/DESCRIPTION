@@ -29,7 +29,7 @@ Imports:
     stringr,
     yaml
 Remotes:
-    artalytics/artcore@c3d983ee523931f171ff3d89efbdd1147fd7d2bd,
+    artalytics/artcore,
     r-data-science/rdstools
 Depends:
     R (>= 4.1.0)
